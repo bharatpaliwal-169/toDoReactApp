@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import Header from './components/basic/Header';
+import MainBody from './components/basic/MainBody';
+import Footer from './components/basic/Footer';
+import ToDoMain from './components/ToDoMain';
+// import Comments from './components/Comments';
+// import CommentMap from './components/CommentMap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render(){
+    return(
+      <div>
+        <Header />
+        <MainBody />
+        <ToDoMain />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
